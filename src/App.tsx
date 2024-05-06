@@ -15,7 +15,7 @@ function App() {
       </header>
 
       <main className="max-w-7xl mx-auto px-3 py-20 flex justify-center items-start flex-col lg:flex-row gap-10">
-        <div className="rounded-2xl bg-white shadow-md overflow-hidden sticky top-5 w-full lg:w-1/2">
+        <div className="rounded-2xl bg-white shadow-md overflow-hidden lg:sticky top-5 w-full lg:w-1/2">
           <h2 className="text-blue-800 text-3xl font-bold mb-5 pl-5 pt-3">Menú</h2>
           {
             menuItems.map(item => (
