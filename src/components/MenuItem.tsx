@@ -3,11 +3,15 @@ import { IMenuItem } from "../interfaces";
 
 interface Props {
     item: IMenuItem;
+    addItem: (item: IMenuItem) => void;
 }
 
-export const MenuItem: FC<Props> = ({ item }) => {
+export const MenuItem: FC<Props> = ({ item, addItem }) => {
     return (
-        <button className="flex justify-between items-center w-full px-5 py-3 transition-all duration-300 hover:bg-blue-100">
+        <button
+            className="flex justify-between items-center w-full px-5 py-3 transition-all duration-300 hover:bg-blue-50"
+            onClick={() => addItem(item)}
+        >
             <p className="text-slate-600">
                 {item.name}
             </p>

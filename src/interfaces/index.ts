@@ -3,3 +3,7 @@ export interface IMenuItem {
     name: string;
     price: number;
 }
+
+export interface IOrderItem extends IMenuItem {
+    quantity: number;
+}
